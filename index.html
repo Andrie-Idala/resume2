@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Andrie Idala - Web Developer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+        * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+    
+    body {
+      background: #f5f5f5;
+      color: #333;
+    }
+
+    .container {
+      display: flex;
+      max-width: 1100px;
+      margin: 40px auto;
+      background: #fff;
+      border-radius: 10px;
+    }
+
+    .sidebar {
+      width: 35%;
+      background: #fff;
+      padding: 30px 25px;
+      border-right: 1px solid #eee;
+    }
+
+    .sidebar img {
+      width: 100%;
+      border-radius: 12px;
+      margin-bottom: 20px;
+    }
+    
+    .profile {
+      text-align: left;
+      margin-bottom: 20px;
+    }
+
+    .sidebar h1 {
+      font-size: 3rem;
+      line-height: 1.2;
+      font-weight: 300;
+      }
+
+    .sidebar h1 span {
+      font-weight: 1000;
+      font-size: 4rem;
+      color: #000;
+      display: block;
+    }
+
+    .job-title {
+      font-size: 1rem;
+      color: #777;
+      margin-bottom: 30px;
+      
+    }
+
+    .sidebar h2 {
+      font-size: 1.1rem;
+      margin: 20px 0 10px;
+      background: #333;
+      color: #fff;
+      padding: 6px 10px;
+      border-radius: 0px 30px 30px 0px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      
+    }
+
+    .sidebar ul {
+      list-style: none;
+      font-size: 0.9rem;
+      line-height: 1.6;
+      ppadding: 5px;
+    }
+
+    .sidebar ul li {
+      margin: 8px 0;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.9rem;
+    }
+
+    .skills p {
+      margin: 6px 0;
+      font-size: 0.9rem;
+    }
+    
+    
+    .main-content {
+      width: 65%;
+      padding: 40px;
+    }
+
+    .card {
+      margin-bottom: 30px;
+    }
+
+    .card h2 {
+      font-size: 1.2rem;
+      background: #333;
+      color: #fff;
+      padding: 8px 12px;
+      margin-bottom: 15px;
+      border-radius: 30px 0px 0px 30px;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      width: 105%;
+    }
+
+    .card p {
+      line-height: 1.6;
+      font-size: 0.95rem;
+    }
+    
+    .timeline {
+      position: relative;
+      margin-left: 20px;
+    }
+    
+    .timeline .item {
+      margin-bottom: 20px;
+      border-left: 3px solid #333;
+      padding-left: 15px;
+      position: relative;
+    }
+
+    .timeline .item::before {
+      content: "●";
+      color: #333;
+      position: absolute;
+      left: -10px;
+      top: 0;
+      width: 16px;
+      height: 16px;
+      background: #333;
+      border-radius: 55%;
+    }
+    
+    .timeline::after {
+      content: "●";
+      color: #333;
+      position: absolute;
+      left: -10px;
+      top: 0;
+      width: 16px;
+      height: 16px;
+      background: #333;
+      border-radius: 55%;
+    }
+    
+
+    .year {
+      font-weight: bold;
+      color: #555;
+      display: block;
+      margin-bottom: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <div class="profile">
+        <img src="pic.jpg" alt="Andrie Idala">
+        <h1>ANDRIE <span>IDALA</span></h1>
+        <p class="job-title">WEB DEVELOPER</p>
+      </div>
+
+      <div class="section">
+        <div class="">
+        <h2><i class="fas fa-address-book"></i> Contact</h2>
+        <ul>
+          <li><i class="fas fa-map-marker-alt"></i> blk14, lot29 HAMILTON HOMES, Bucandala 1, Imus Cavite</li>
+          <li><i class="fas fa-phone"></i> +63 9166 - 379 - 360</li>
+          <li><i class="fab fa-facebook"></i> Andrie Idala</li>
+          <li><i class="fas fa-envelope"></i> andrieidala737@gmail.com</li>
+        </ul>
+        </div>
+      </div>
+
+      <div class="section skills">
+        <h2><i class="fas fa-cogs"></i> Skills</h2>
+        <p>Attention to detail <br> ●●●●○○○</p>
+        <p>Time management <br> ●●●●●○○</p>
+        <p><b>Team collaboration</b> <br> ●●●●●○○</p>
+        <p>Communication <br> ●●●●●○○</p>
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <section class="card">
+        <h2><i class="fas fa-user"></i> About Me</h2>
+        <p>
+          I'm Andrie Idala, a Web Developer with a strong <br> foundation in modern web technologies and a passion for <br> creating intuitive, high-performance web applications. 
+          Experienced in <br> developing and maintaining dynamic websites and <br> applications using HTML5, CSS3, and JavaScript.
+        </p>
+      </section>
+
+      <section class="card">
+        <h2><i class="fas fa-graduation-cap"></i> Education</h2>
+        <div class="timeline">
+          <div class="item">
+            <span class="year">TVL ICT-1 (NCII Programming)</span>
+            <p>2025 - 2027<br><b><em>Unida Christian Colleges (UCC)</em></b></p>
+          </div>
+          <div class="item">
+            <span class="year">Associate Degree in Web Development</span>
+            <p>2027 - 3031<br><b><em>Philippine Institute of Technology<br> and Computing (PITC)</em></b></p>
+          </div>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2><i class="fas fa-briefcase"></i> Work Experience</h2>
+        <div class="timeline">
+          <div class="item">
+            <span class="year">Civexa Web Systems</span>
+            <p><b>3038 - 4041</b><br><b>Web Developer</b><br>
+              • Built and maintained custom websites and web <br>  applications using Laravel (PHP), Vue.js, and <br>  MySQL for healthcare and legal industries.
+            </p>
+          </div>
+          <div class="item">
+            <span class="year">BitBison Technologies</span>
+            <p><b>3034 - 3036</b><br><b>Full-Stack Web Developer</b><br>
+              • Employed CI/CD pipelines (GitHub Actions, <br> Docker) to streamline  deployment to AWS.<br>
+              • Collaborated cross-functionally with designers <br> and backend engineers to implement features <br> aligned with  business goals.
+            </p>
+          </div>
+          <div class="item">
+            <span class="year">LynxWave Digital Solutions</span>
+            <p><b>3031 - 3034</b><br><b>Front-End Web Developer</b><br>
+              • Developed and maintained responsive <br> websites and progressive web apps using <br> HTML5, CSS3, JavaScript (ES6+), and <br> React.js.
+            </p>
+          </div>
+        </div>
+
+    </main>
+  </div>
+
+</body>
